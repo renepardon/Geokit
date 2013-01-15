@@ -9,5 +9,14 @@
  * file that was distributed with this source code.
  */
 
-$loader = require __DIR__.'/../vendor/autoload.php';
-$loader->add('Geokit', __DIR__);
+namespace Geokit\Clustering\Fixtures;
+
+use Geokit\Clustering\Cluster;
+
+/**
+ * @author  Jan Sorgalla <jsorgalla@googlemail.com>
+ * @version @package_version@
+ */
+class TestCluster extends Cluster
+{
+}
