@@ -44,6 +44,12 @@ interface FeatureFactoryInterface
     public function createPolygon(LinearRingInterface $exteriorRing, array $interiorRings = array());
 
     /**
+     * @param  LinearRingInterface $exteriorRing
+     * @return TriangleInterface
+     */
+    public function createTriangle(LinearRingInterface $exteriorRing);
+
+    /**
      * @param  GeometryInterface[]         $geometries
      * @return GeometryCollectionInterface
      */
@@ -72,4 +78,16 @@ interface FeatureFactoryInterface
      * @return MultiPolygonInterface
      */
     public function createMultiPolygon(array $polygons = array());
+
+    /**
+     * @param  PolygonInterface[]         $polygons
+     * @return PolyhedralSurfaceInterface
+     */
+    public function createPolyhedralSurface(array $polygons = array());
+
+    /**
+     * @param  TriangleInterface[] $triangles
+     * @return TINInterface
+     */
+    public function createTIN(array $triangles = array());
 }

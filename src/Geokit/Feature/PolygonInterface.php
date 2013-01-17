@@ -5,8 +5,6 @@ namespace Geokit\Feature;
 /**
  * A Polygon is a planar Surface defined by 1 exterior boundary and 0 or more
  * interior boundaries. Each interior boundary defines a hole in the Polygon.
- * A Triangle is a polygon with 3 distinct, non-collinear vertices and no
- * interior boundary.
  *
  * The exterior boundary LinearRing defines the “top” of the surface which is
  * the side of the surface from which the exterior boundary appears to traverse
