@@ -39,5 +39,5 @@ interface MultiCurveInterface extends GeometryCollectionInterface
      *
      * @return float
      */
-    public function length();
+    public function getLength();
 }

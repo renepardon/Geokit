@@ -42,7 +42,7 @@ interface GeometryInterface
      *
      * @return integer
      */
-    public function dimension();
+    public function getDimension();
 
     /**
      * Returns the name of the instantiable subtype of Geometry of which this
@@ -51,7 +51,7 @@ interface GeometryInterface
      *
      * @return string
      */
-    public function geometryType();
+    public function getGeometryType();
 
     /**
      * Returns the Spatial Reference System ID for this geometric object.
@@ -60,7 +60,7 @@ interface GeometryInterface
      *
      * @return integer
      */
-    public function srid();
+    public function getSrid();
 
     /**
      * The minimum bounding box for this Geometry, returned as a Geometry.
@@ -73,7 +73,7 @@ interface GeometryInterface
      *
      * @return GeometryInterface
      */
-    public function envelope();
+    public function getEnvelope();
 
     /**
      * Exports this geometric object to a specific Well-known Text
@@ -146,7 +146,7 @@ interface GeometryInterface
      *
      * @return GeometryInterface
      */
-    public function boundary();
+    public function getBoundary();
 
     // --- Methods for testing spatial relations between geometric objects -----
 

@@ -2,7 +2,7 @@
 
 namespace Geokit\Feature;
 
-interface FeatureFactoryInterface
+interface GeometryFactoryInterface
 {
     /**
      * @param  float          $x

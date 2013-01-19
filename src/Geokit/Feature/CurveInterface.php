@@ -34,21 +34,21 @@ interface CurveInterface extends GeometryInterface
      *
      * @return float
      */
-    public function length();
+    public function getLength();
 
     /**
      * The start Point of this Curve.
      *
      * @return PointInterface
      */
-    public function startPoint();
+    public function getStartPoint();
 
     /**
      * The end Point of this Curve.
      *
      * @return PointInterface
      */
-    public function endPoint();
+    public function getEndPoint();
 
     /**
      * Returns 1 (TRUE) if this Curve is closed [StartPoint ( ) = EndPoint ( )].

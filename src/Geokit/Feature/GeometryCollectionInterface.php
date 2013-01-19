@@ -21,7 +21,7 @@ interface GeometryCollectionInterface extends GeometryInterface
      *
      * @return integer
      */
-    public function numGeometries();
+    public function getNumGeometries();
 
     /**
      * Returns the Nth geometry in this GeometryCollection.
@@ -29,7 +29,7 @@ interface GeometryCollectionInterface extends GeometryInterface
      * @param  integer           $n
      * @return GeometryInterface
      */
-    public function geometryN($n);
+    public function getGeometryN($n);
 
     /**
      * Returns the geometries as a (possibly empty) array of objects that
@@ -39,5 +39,5 @@ interface GeometryCollectionInterface extends GeometryInterface
      *
      * @return GeometryInterface[]
      */
-    public function geometries();
+    public function getGeometries();
 }

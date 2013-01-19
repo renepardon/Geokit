@@ -35,7 +35,7 @@ interface PolyhedralSurfaceInterface extends SurfaceInterface
      *
      * @return integer
      */
-    public function numPatches();
+    public function getNumPatches();
 
     /**
      * Returns a polygon in this surface, the order is arbitrary.
@@ -43,7 +43,7 @@ interface PolyhedralSurfaceInterface extends SurfaceInterface
      * @param  integer          $n
      * @return PolygonInterface
      */
-    public function patchN($n);
+    public function getPatchN($n);
 
     /**
      * Returns the collection of polygons in this surface that bounds the given
@@ -51,7 +51,7 @@ interface PolyhedralSurfaceInterface extends SurfaceInterface
      *
      * @return MultiPolygonInterface
      */
-    public function boundingPolygons(PolygonInterface $polygon);
+    public function getBoundingPolygons(PolygonInterface $polygon);
 
     /**
      * Returns 1 (True) if the polygon closes on itself, and thus has no

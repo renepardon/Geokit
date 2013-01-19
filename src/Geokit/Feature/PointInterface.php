@@ -16,14 +16,14 @@ interface PointInterface extends GeometryInterface
      *
      * @return integer
      */
-    public function x();
+    public function getX();
 
     /**
      * The y-coordinate value for this Point.
      *
      * @return integer
      */
-    public function y();
+    public function getY();
 
     /**
      * The z-coordinate value for this Point, if it has one. Returns NIL
@@ -31,7 +31,7 @@ interface PointInterface extends GeometryInterface
      *
      * @return integer
      */
-    public function z();
+    public function getZ();
 
     /**
      * The m-coordinate value for this Point, if it has one. Returns NIL
@@ -39,5 +39,5 @@ interface PointInterface extends GeometryInterface
      *
      * @return integer
      */
-    public function m();
+    public function getM();
 }

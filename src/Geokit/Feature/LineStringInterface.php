@@ -13,7 +13,7 @@ interface LineStringInterface extends CurveInterface
      *
      * @return integer
      */
-    public function numPoints();
+    public function getNumPoints();
 
     /**
      * Returns the specified Point N in this LineString.
@@ -21,7 +21,7 @@ interface LineStringInterface extends CurveInterface
      * @param  integer        $n
      * @return PointInterface
      */
-    public function pointN($n);
+    public function getPointN($n);
 
     /**
      * Returns the points as a (possibly empty) array of objects that
@@ -31,5 +31,5 @@ interface LineStringInterface extends CurveInterface
      *
      * @return PointInterface[]
      */
-    public function points();
+    public function getPoints();
 }

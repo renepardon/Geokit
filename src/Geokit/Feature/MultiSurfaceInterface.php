@@ -30,7 +30,7 @@ interface MultiSurfaceInterface extends GeometryCollectionInterface
      *
      * @return float
      */
-    public function area();
+    public function getArea();
 
     /**
      * The mathematical centroid for this MultiSurface. The result is not
@@ -38,12 +38,12 @@ interface MultiSurfaceInterface extends GeometryCollectionInterface
      *
      * @return PointInterface
      */
-    public function centroid();
+    public function getCentroid();
 
     /**
      * A Point guaranteed to be on this MultiSurface.
      *
      * @return PointInterface
      */
-    public function pointOnSurface();
+    public function getPointOnSurface();
 }

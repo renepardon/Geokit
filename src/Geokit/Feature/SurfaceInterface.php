@@ -38,7 +38,7 @@ interface SurfaceInterface extends GeometryInterface
      *
      * @return float
      */
-    public function area();
+    public function getArea();
 
     /**
      * The mathematical centroid for this Surface as a Point. The result is not
@@ -46,12 +46,12 @@ interface SurfaceInterface extends GeometryInterface
      *
      * @return PointInterface
      */
-    public function centroid();
+    public function getCentroid();
 
     /**
      * A Point guaranteed to be on this Surface.
      *
      * @return PointInterface
      */
-    public function pointOnSurface();
+    public function getPointOnSurface();
 }

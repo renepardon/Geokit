@@ -41,14 +41,14 @@ interface PolygonInterface extends SurfaceInterface
      *
      * @return LineStringInterface
      */
-    public function exteriorRing();
+    public function getExteriorRing();
 
     /**
      * Returns the number of interior rings in this Polygon.
      *
      * @return integer
      */
-    public function numInteriorRings();
+    public function getNumInteriorRings();
 
     /**
      * Returns the Nth interior ring for this Polygon as a LineString.
@@ -56,7 +56,7 @@ interface PolygonInterface extends SurfaceInterface
      * @param  integer             $n
      * @return LineStringInterface
      */
-    public function interiorRingN($n);
+    public function getInteriorRingN($n);
 
     /**
      * Returns the interior rings as a (possibly empty) array of objects
@@ -66,5 +66,5 @@ interface PolygonInterface extends SurfaceInterface
      *
      * @return LineStringInterface[]
      */
-    public function interiorRings();
+    public function getInteriorRings();
 }
